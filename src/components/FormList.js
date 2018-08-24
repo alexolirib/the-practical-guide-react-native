@@ -10,6 +10,10 @@ const FormList = (props)=>(
             onChangeText={props.handleChange}
             style={styles.placeInput}
         />
+        <Button
+          title="Clean"
+          style={styles.placeButton}
+          onPress={props.removeAllList} />
         <Button title="add"
             style={styles.placeButton}
             onPress={props.placeSubmitHandle} />
@@ -25,10 +29,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     placeInput: {
-      width: '70%'
+      width: '60%'
     },
     placeButton: {
-      width: '30%'
+      width: '15%'
     },
 })
 
