@@ -22,7 +22,7 @@ class List extends React.Component {
                 <ListItem
                     placeName={info.item.value}
                     placeImg={info.item.image}
-                    onItemPressed={() => this.props.onItemDeleted(info.item.key)}
+                    onItemPressed={() => this.props.onItemSelected(info.item.key)}
                 />
             )}
         />
