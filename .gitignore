@@ -3,6 +3,8 @@
 # expo
 .expo/
 
+/android/app/build
+
 # dependencies
 /node_modules
 

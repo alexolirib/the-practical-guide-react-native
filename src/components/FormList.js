@@ -4,7 +4,7 @@ import { StyleSheet, View, TextInput, Button} from 'react-native'
 const FormList = (props)=>(
     <View style={styles.inputContainer}>
         <TextInput
-            style={{ height: 100 }}
+            style={{ height: 50 }}
             placeholder="an awesome place"
             value={props.placeName}
             onChangeText={props.handleChange}
