@@ -14,7 +14,8 @@ class App extends React.Component {
   //   itemSelected: null
   // }
 
-  placeSubmitHandle = () => {
+  placeSubmitHandle = () => { 
+    console.log("entrou")
     this.props.onAddPlace();
     // if (this.state.placeName.trim() == '') {
     //   return;
