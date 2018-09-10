@@ -14,9 +14,9 @@ import com.reactnativenavigation.NavigationApplication;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainApplication extends Application implements ReactApplication {
+public class MainApplication extends NavigationApplication {
 
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  //private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
   //   @Override
   //   public boolean getUseDeveloperSupport() {
   //     return BuildConfig.DEBUG;
@@ -56,7 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
          // Add additional packages you require here
          // No need to add RnnPackage and MainReactPackage
          return Arrays.<ReactPackage>asList(
-             // eg. new VectorIconsPackage()
+             new VectorIconsPackage()
          );
      }
 
@@ -64,5 +64,5 @@ public class MainApplication extends Application implements ReactApplication {
      public List<ReactPackage> createAdditionalReactPackages() {
          return getPackages();
      }
- }
+ 
 }

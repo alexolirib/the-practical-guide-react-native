@@ -1,7 +1,17 @@
 import {Navigation} from 'react-native-navigation';
 
+import AuthScreen from './src/screens/Auth/Auth'
+
 //Register Screens
-Navigation.register
+Navigation.registerComponent("the-pratical-guide.AuthScreen", ()=> AuthScreen);
+
+//start app
+Navigation.startSigleScreenApp({
+    screen: {
+        screen: "the-pratical-guide.AuthScreen",
+        title: "Login" 
+    }
+})
 
 // import React from 'react';
 // import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
