@@ -46,7 +46,7 @@ public class MainApplication extends NavigationApplication {
   //   super.onCreate();
   //   SoLoader.init(this, /* native exopackage */ false);
   // }
-   @Override
+    @Override
      public boolean isDebug() {
          // Make sure you are using BuildConfig from your own application
          return BuildConfig.DEBUG;
@@ -64,5 +64,10 @@ public class MainApplication extends NavigationApplication {
      public List<ReactPackage> createAdditionalReactPackages() {
          return getPackages();
      }
+
+     @Override
+    public String getJSMainModuleName() {
+        return "index";
+    }
  
 }

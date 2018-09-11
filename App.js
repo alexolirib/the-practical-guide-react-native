@@ -1,12 +1,15 @@
-import {Navigation} from 'react-native-navigation';
-
+import { Navigation } from 'react-native-navigation';
 import AuthScreen from './src/screens/Auth/Auth'
+import SharePlaceScreen from './src/screens/SharePlace/SharePlace'
+import FindPlaceScreen from './src/screens/FindPlace/FindPlace'
 
 //Register Screens
 Navigation.registerComponent("the-pratical-guide.AuthScreen", ()=> AuthScreen);
+Navigation.registerComponent("the-pratical-guide.SharePlaceScreen", ()=> SharePlaceScreen);
+Navigation.registerComponent("the-pratical-guide.FindPlaceScreen", ()=> FindPlaceScreen);
 
 //start app
-Navigation.startSigleScreenApp({
+Navigation.startSingleScreenApp({
     screen: {
         screen: "the-pratical-guide.AuthScreen",
         title: "Login" 
